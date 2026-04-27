@@ -1,0 +1,609 @@
+package Vehicle
+using RTDB
+
+ncpd_brennan_apollo_bike : v_sportbike3_brennan_apollo_police
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_biker_shotgun_ma"
+	];
+	minVehiclePassengersCount = 1;
+	maxVehiclePassengersCount = 1;
+	affiliation = "Factions.NCPD";
+}
+
+ncpd_villefort_cortes_heat_1_Rancho : v_standard2_villefort_cortes_police_sheriff
+{
+	preventionPassengers = 
+	[
+		  "Character.prevention_California_Sheriff"
+	];
+	minVehiclePassengersCount = 1;
+	maxVehiclePassengersCount = 1;
+}
+
+ncpd_villefort_cortes_heat_1 : v_standard2_villefort_cortes_police
+{
+	preventionPassengers = 
+	[
+		  "Character.prevention_police_handgun_ma","Character.prevention_police_batonNCPDPPE_wa"
+	];
+	minVehiclePassengersCount = 1;
+	maxVehiclePassengersCount = 1;
+}
+
+ncpd_villefort_cortes_heat_1_City_Center : v_standard2_villefort_cortes_police
+{
+	preventionPassengers = 
+	[
+		  "Character.prevention_police_handgun_ma","Character.prevention_police_batonNCPDPPE_wa"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 2;
+}
+
+ncpd_villefort_cortes_heat_1_Heywood : v_standard2_villefort_cortes_police
+{
+	preventionPassengers = 
+	[
+		  "Character.prevention_police_handgun_ma","Character.prevention_police_batonNCPDPPE_wa"
+	];
+	minVehiclePassengersCount = 1;
+	maxVehiclePassengersCount = 3;
+}
+
+ncpd_archer_hella_heat_1_Arroyo : v_standard2_archer_hella_police
+{
+	preventionPassengers = 
+	[
+		  "Character.prevention_police_handgun_ma","Character.prevention_police_batonNCPDPPE_wa"
+	];
+	minVehiclePassengersCount = 1;
+	maxVehiclePassengersCount = 1;
+}
+
+ncpd_archer_hella_heat_1_Northside : v_standard2_archer_hella_police
+{
+	preventionPassengers = 
+	[
+		  "Character.prevention_police_handgun_ma_northside"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 2;
+}
+
+ncpd_archer_hella_heat_2_northside : v_standard2_archer_hella_police
+{
+	preventionPassengers = 
+	[
+		  "Character.prevention_enforcer_shotgun_ma","Character.prevention_enforcer_rifle_ma"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 2;
+}
+
+ncpd_villefort_cortes_heat_2 : v_standard2_villefort_cortes_police
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_police_handgun_wa", "Character.prevention_police_shotgun_ma", "Character.prevention_police_shotgun_wa","Character.ncpd_investigator_officer_omaha_ma","Character.ncpd_investigator_officer_omaha_wa","Character.ncpd_inspector_ranged1_lexington_ma"
+	];
+	minVehiclePassengersCount = 1;
+	maxVehiclePassengersCount = 2;
+}
+
+ncpd_villefort_cortes_heat_2_City_Center : v_standard2_villefort_cortes_police
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_police_handgun_wa", "Character.prevention_police_shotgun_ma", "Character.prevention_police_shotgun_wa","Character.ncpd_investigator_officer_omaha_ma","Character.ncpd_investigator_officer_omaha_wa","Character.ncpd_inspector_ranged1_lexington_ma"
+	];
+	minVehiclePassengersCount = 3;
+	maxVehiclePassengersCount = 4;
+}
+
+ncpd_suv_chevalier_emperor_heat_2_City_Center : v_standard3_chevalier_emperor_police
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_police_handgun_wa", "Character.prevention_police_shotgun_ma", "Character.prevention_police_shotgun_wa","Character.ncpd_investigator_officer_omaha_ma","Character.ncpd_investigator_officer_omaha_wa","Character.ncpd_inspector_ranged1_lexington_ma"
+	];
+	minVehiclePassengersCount = 4;
+	maxVehiclePassengersCount = 4;
+	blockadeRightPassengerOffset = 1.0;
+	blockadeLeftPassengerOffset = -0.5;
+}
+
+ncpd_archer_hella_ncu_heat_2 : v_standard2_villefort_cortes_police
+{
+	appearanceName = "villefort_cortes__basic_black_agent";
+	preventionPassengers = 
+	[
+		"Character.netwatch_agent_netrunner3_omaha_elite"
+	];
+	minVehiclePassengersCount = 1;
+	maxVehiclePassengersCount = 2;
+}
+
+ncpd_villefort_cortes_black_agent_heat_2_heywood : v_standard2_villefort_cortes_police
+{
+	appearanceName = "villefort_cortes__basic_black_agent";
+	preventionPassengers = 
+	[
+		"Character.ncpd_investigator_officer_omaha_ma","Character.ncpd_investigator_officer_omaha_wa","Character.ncpd_inspector_ranged1_lexington_ma"
+	];
+	minVehiclePassengersCount = 1;
+	maxVehiclePassengersCount = 4;
+}
+
+
+ncpd_archer_hella_heat_2 : v_standard2_archer_hella_police
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_police_shotgun_wa", "Character.prevention_police_handgun_wa", "Character.prevention_police_shotgun_ma","Character.ncpd_investigator_officer_omaha_ma","Character.ncpd_investigator_officer_omaha_wa","Character.ncpd_inspector_ranged1_lexington_ma"
+	];
+	minVehiclePassengersCount = 1;
+	maxVehiclePassengersCount = 2;
+}
+
+ncpd_archer_hella_heat_2_Kabuki : v_standard2_archer_hella_police
+{
+	preventionPassengers = 
+	[
+		"Character.ncpd_investigator_officer_omaha_ma","Character.ncpd_investigator_officer_omaha_wa","Character.ncpd_inspector_ranged1_lexington_ma"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 2;
+}
+
+ncpd_archer_hella_heat_3 : v_standard2_archer_hella_police
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_police_rifle_ma", "Character.prevention_police_shotgun_ma", "Character.prevention_police_rifle_wa", "Character.prevention_police_shotgun_wa","Character.prevention_android_rifle_ma"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 4;
+}
+
+ncpd_archer_hella_heat_3_Arroyo : v_standard2_archer_hella_police
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_police_rifle_ma", "Character.prevention_police_shotgun_ma", "Character.prevention_police_rifle_wa", "Character.prevention_police_shotgun_wa","Character.prevention_android_rifle_ma"
+	];
+	minVehiclePassengersCount = 4;
+	maxVehiclePassengersCount = 4;
+}
+
+ncpd_thorton_merrimac_heat_3 : v_standard25_thorton_merrimac_police
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_police_rifle_ma", "Character.prevention_police_shotgun_ma", "Character.prevention_police_rifle_wa", "Character.prevention_police_shotgun_wa","Character.netwatch_agent_netrunner3_omaha_elite"
+	];
+	minVehiclePassengersCount = 3;
+	maxVehiclePassengersCount = 4;
+}
+
+ncpd_thorton_merrimac_heat_3_northside : v_standard25_thorton_merrimac_police
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_enforcer_rifle_ma", "Character.prevention_enforcer_shotgun_ma","Character.netwatch_agent_netrunner3_omaha_elite"
+	];
+	minVehiclePassengersCount = 3;
+	maxVehiclePassengersCount = 4;
+}
+
+ncpd_ROBOT_heat_3 : v_standard2_archer_hella_ncu
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_android_rifle_ma_elite"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 3;
+}
+
+ncpd_brennan_apollo_bike_heat_3 : v_sportbike3_brennan_apollo_police
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_biker_rifle_ma"
+	];
+	minVehiclePassengersCount = 1;
+	maxVehiclePassengersCount = 1;
+	affiliation = "Factions.NCPD";
+}
+
+ncpd_suv_chevalier_emperor_heat_4 : v_standard3_chevalier_emperor_police
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_enforcer_rifle_ma", "Character.prevention_enforcer_shotgun_ma", "Character.prevention_enforcer_lmg_mb"
+	];
+	minVehiclePassengersCount = 4;
+	maxVehiclePassengersCount = 4;
+	blockadeRightPassengerOffset = 1.0;
+	blockadeLeftPassengerOffset = -0.5;
+}
+
+ncpd_hellhound_heat_5 : v_standard3_militech_hellhound_police
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_enforcer_rifle_ma", "Character.prevention_enforcer_shotgun_ma", "Character.prevention_enforcer_lmg_mb", "Character.prevention_enforcer_rifle_ma_elite","Character.prevention_enforcer_shotgun_ma_elite","Character.prevention_enforcer_lmg_mb_elite","Character.netwatch_agent_netrunner3_omaha_elite"
+	];
+	minVehiclePassengersCount = 4;
+	maxVehiclePassengersCount = 4;
+	blockadeRightPassengerOffset = 1.0;
+	blockadeLeftPassengerOffset = -0.5;
+}
+
+ncpd_suv_thorton_merrimac_maxtac : v_standard25_thorton_merrimac_maxtac
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_maxtac_rifle_wa", "Character.prevention_maxtac_rifle_ma"
+	];
+	minVehiclePassengersCount = 4;
+	maxVehiclePassengersCount = 4;
+	blockadeRightPassengerOffset = 1.0;
+	blockadeLeftPassengerOffset = -0.5;
+}
+
+max_tac_av : q001_max_tac_av
+{
+	tags = 
+	[
+		"Av", "MaxTac"
+	];
+	isHackable = "Vehicle.Never";
+	entityTemplatePath = "base\dependencies\vehicles\special\av_zetatech_surveyor_basic_01_ep1.ent";
+	appearanceName = "zetatech_surveyor__basic_maxtac_camo_01";
+	preventionPassengers = 
+	[
+		"Character.maxtac_av_riffle_ma", "Character.maxtac_av_mantis_wa", "Character.maxtac_av_netrunner_ma", "Character.maxtac_av_sniper_wa_elite"
+	];
+	archetypeName = "ncpd_av_vehicle";
+	statModifierGroups = [];
+}
+
+max_tac_av1 : max_tac_av
+{
+	preventionPassengers = 
+	[
+		"Character.maxtac_av_riffle_ma", "Character.maxtac_av_mantis_wa", "Character.maxtac_av_netrunner_ma", "Character.maxtac_av_sniper_wa_elite"
+	];
+}
+
+max_tac_av2 : max_tac_av
+{
+	preventionPassengers = 
+	[
+		"Character.maxtac_av_LMG_mb", "Character.maxtac_av_mantis_wa", "Character.maxtac_av_netrunner_ma", "Character.maxtac_av_sniper_wa_elite"
+	];
+}
+
+max_tac_av3 : max_tac_av
+{
+	preventionPassengers = 
+	[
+		"Character.maxtac_av_LMG_mb", "Character.maxtac_av_riffle_ma", "Character.maxtac_av_netrunner_ma", "Character.maxtac_av_sniper_wa_elite"
+	];
+}
+
+max_tac_av_2nd_wave1 : max_tac_av
+{
+	preventionPassengers = 
+	[
+		"Character.maxtac_av_riffle_ma_2nd_wave", "Character.maxtac_av_sniper_wa_elite_2nd_wave", "Character.maxtac_av_mantis_wa_2nd_wave", "Character.maxtac_av_netrunner_ma_2nd_wave"
+	];
+}
+
+max_tac_av_2nd_wave2 : max_tac_av
+{
+	preventionPassengers = 
+	[
+		"Character.maxtac_av_LMG_mb_2nd_wave", "Character.maxtac_av_sniper_wa_elite_2nd_wave", "Character.maxtac_av_mantis_wa_2nd_wave", "Character.maxtac_av_netrunner_ma_2nd_wave"
+	];
+}
+
+max_tac_av_2nd_wave3 : max_tac_av
+{
+	preventionPassengers = 
+	[
+		"Character.maxtac_av_LMG_mb_2nd_wave", "Character.maxtac_av_riffle_ma_2nd_wave", "Character.maxtac_av_mantis_wa_2nd_wave", "Character.maxtac_av_netrunner_ma_2nd_wave"
+	];
+}
+
+aldecado_thorton_galena_heat_1 : v_standard2_thorton_galena_nomad
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_aldecaldo_rifle_wa", "Character.prevention_aldecaldo_rifle_ma", "Character.prevention_aldecaldo_shotgun_ma"
+	];
+	minVehiclePassengersCount = 1;
+	maxVehiclePassengersCount = 2;
+}
+
+aldecado_thorton_galena_heat_2 : v_standard2_thorton_galena_nomad
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_aldecaldo_rifle_wa", "Character.prevention_aldecaldo_rifle_ma", "Character.prevention_aldecaldo_shotgun_ma"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 2;
+}
+
+aldecado_archer_quartz_heat_3 : v_standard2_archer_quartz_nomad
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_aldecaldo_rifle_wa", "Character.prevention_aldecaldo_rifle_ma", "Character.prevention_aldecaldo_shotgun_ma"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 2;
+}
+
+aldecado_thorton_colby_heat_3 : v_standard25_thorton_colby_nomad
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_aldecaldo_rifle_wa", "Character.prevention_aldecaldo_rifle_ma", "Character.prevention_aldecaldo_shotgun_ma"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 2;
+}
+
+border_patrol_villefort_cortes_heat_1 : v_standard2_villefort_cortes_police_border_patrol
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_border_guards", "Character.prevention_border_guards_shotgun"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 2;
+}
+
+border_patrol_villefort_cortes_heat_2 : v_standard2_villefort_cortes_police_border_patrol
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_border_guards", "Character.prevention_border_guards_shotgun"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 4;
+}
+
+border_patrol_chevalier_emperor_militech_heat_3 : v_standard3_chevalier_emperor_militech
+{
+	appearanceName = "chevalier_emperor__basic_militech_camo_01";
+	preventionPassengers = 
+	[
+		"Character.prevention_border_guards", "Character.prevention_border_guards_shotgun"
+	];
+	minVehiclePassengersCount = 4;
+	maxVehiclePassengersCount = 4;
+}
+
+wasteland_chevalier_emperor_militech_heat_1 : v_standard3_chevalier_emperor_militech
+{
+	appearanceName = "chevalier_emperor__basic_militech";
+	preventionPassengers = 
+	[
+		"Character.prevention_militech_smg_ma", "Character.prevention_militech_rifle_ma", "Character.prevention_militech_sniper_ma"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 2;
+}
+
+wasteland_chevalier_emperor_militech_heat_2 : v_standard3_chevalier_emperor_militech
+{
+	appearanceName = "chevalier_emperor__basic_militech";
+	preventionPassengers = 
+	[
+		"Character.prevention_militech_smg_ma", "Character.prevention_militech_rifle_ma", "Character.prevention_militech_sniper_ma"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 4;
+}
+
+wasteland_chevalier_emperor_militech_heat_3 : v_standard3_chevalier_emperor_militech
+{
+	appearanceName = "chevalier_emperor__basic_militech_camo_01";
+	preventionPassengers = 
+	[
+		"Character.prevention_militech_sniper_ma", "Character.prevention_militech_HMG_mb", "Character.prevention_militech_shotgun_mah"
+	];
+	minVehiclePassengersCount = 4;
+	maxVehiclePassengersCount = 4;
+}
+
+pacifica_heat_galena : v_standard2_thorton_galena_gt
+
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_bountyhunter_netrunner_wa","Character.prevention_bountyhunter_rifle_ma"
+	];
+	minVehiclePassengersCount = 1;
+	maxVehiclePassengersCount = 1;
+}
+
+tyger_bike_1 : v_sportbike1_yaiba_kusanagi_tyger
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_tyger_01","Character.prevention_tyger_01_katana"
+	];
+	minVehiclePassengersCount = 1;
+	maxVehiclePassengersCount = 1;
+	affiliation = "Factions.TygerClaws";
+}
+
+tyger_bike_2 : v_sportbike1_yaiba_kusanagi_tyger
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_tyger_02_sidewinder"
+	];
+	minVehiclePassengersCount = 1;
+	maxVehiclePassengersCount = 1;
+	affiliation = "Factions.TygerClaws";
+}
+
+security_car_1 : v_standard3_chevalier_emperor_ncu
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_security_01_melee"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 2;
+	affiliation = "Factions.Arasaka";
+}
+
+security_car_2 : v_standard3_chevalier_emperor_ncu
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_security_02_Ajax"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 2;
+	affiliation = "Factions.Arasaka";
+}
+
+security_car_3 : v_standard3_chevalier_emperor_ncu
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_security_03_defender","Character.prevention_security_02_Ajax"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 4;
+	affiliation = "Factions.Arasaka";
+}
+
+biotechnica_hellhound : v_standard3_militech_hellhound_police
+{
+	preventionPassengers = 
+	[
+		"Character.prevention_biotechnica_02"
+	];
+	minVehiclePassengersCount = 4;
+	maxVehiclePassengersCount = 4;
+	blockadeRightPassengerOffset = 1.0;
+	blockadeLeftPassengerOffset = -0.5;
+}
+
+KangTao_Villefort_Cortes_heat_03 : v_standard2_villefort_cortes
+{
+	visualTags = 
+	[
+		"KangTao"
+	];
+	preventionPassengers = 
+	[
+		"Character.KangTao_unit_ranged1_dian_ma","Character.KangTao_unit_grenadier"
+	];
+	minVehiclePassengersCount = 4;
+	maxVehiclePassengersCount = 4;
+}
+
+Columbus_kangtao_heat_03 : v_standard25_villefort_columbus
+{
+	visualTags = 
+	[
+		"KangTao"
+	];
+	preventionPassengers = 
+	[
+		"Character.KangTao_unit_Shotgun_zhuo_elite","Character.KangTao_unit_Shotgun_zhuo_rare"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 2;
+}
+
+Behemoth_kangtao_heat_03 : v_utility4_militech_behemoth
+{
+	visualTags = 
+	[
+		"KangTao"
+	];
+		preventionPassengers = 
+	[
+		"Character.KangTao_unit_grenadier"
+	];
+	minVehiclePassengersCount = 2;
+	maxVehiclePassengersCount = 2;
+}
+
+v_standard2_villefort_cortes_police_prevention : ncpd_villefort_cortes_heat_1
+{
+}
+
+v_standard2_villefort_cortes_police_prevention_2 : ncpd_villefort_cortes_heat_2
+{
+}
+
+v_standard2_archer_hella_police_prevention : ncpd_archer_hella_heat_2
+{
+}
+
+v_standard2_archer_hella_police_prevention_2 : ncpd_archer_hella_heat_3
+{
+}
+
+v_standard3_chevalier_emperor_police_prevention : ncpd_suv_chevalier_emperor_heat_4
+{
+}
+
+v_standard25_thorton_merrimac_maxtac_prevention : ncpd_suv_thorton_merrimac_maxtac
+{
+}
+
+v_standard2_thorton_galena_nomad_prevention : aldecado_thorton_galena_heat_1
+{
+}
+
+v_standard2_thorton_galena_nomad_prevention_2 : aldecado_thorton_galena_heat_2
+{
+}
+
+v_standard2_archer_quartz_nomad_prevention : aldecado_archer_quartz_heat_3
+{
+}
+
+v_standard25_thorton_colby_nomad_prevention : aldecado_thorton_colby_heat_3
+{
+}
+
+v_standard2_villefort_cortes_police_border_patrol_prevention : border_patrol_villefort_cortes_heat_1
+{
+}
+
+v_standard2_villefort_cortes_police_border_patrol_prevention_2 : border_patrol_villefort_cortes_heat_2
+{
+}
+
+v_standard3_chevalier_emperor_militech_border_prevention : border_patrol_chevalier_emperor_militech_heat_3
+{
+}
+
+v_standard3_chevalier_emperor_militech_wasteland_prevention : wasteland_chevalier_emperor_militech_heat_1
+{
+}
+
+v_standard3_chevalier_emperor_militech_wasteland_prevention_2 : wasteland_chevalier_emperor_militech_heat_2
+{
+}
+
+v_standard3_chevalier_emperor_militech_wasteland_heavy_prevention : wasteland_chevalier_emperor_militech_heat_3
+{
+}
+
